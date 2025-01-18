@@ -18,7 +18,7 @@ import UKstudvisa from "./UKstudvisa";
 
 import Hktourist from "./HongKongpages/Hktourist";
 import HKemployee from "./HongKongpages/HKemployee";
-import Hktudent from "./HongKongpages/Hktudent";
+import HKstudent from "./HongKongpages/HKstudent";
 import HKbusiness from "./HongKongpages/HKbusiness";
 import HKdependent from "./HongKongpages/HKdependent";
 import HKwork from "./HongKongpages/HKwork";
@@ -287,7 +287,7 @@ const Migrate = () => {
                   {/* Render Content component only for "Migrate to Germany" */}
               {selectedCountry === "Migrate to Germany" && <Content />}
               {selectedCountry === "Migrate to United Kingdom" && <UKstudvisa />}
-              {selectedCountry === "Migrate to Hong Kong" && <Hktudent />}
+              {selectedCountry === "Migrate to Hong Kong" && <HKstudent />}
               {selectedCountry === "Migrate to Canada" && <Canadastudent />}
                 </>
               ) : (
@@ -309,7 +309,7 @@ const Migrate = () => {
               {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Innovator Visa" && <UKinnovatorvisa />}
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Sponsorship Visa" && <UKsponvisa />}
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Student Visa" && <UKstudvisa />}
-             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Student Visa" && <Hktudent />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Student Visa" && <HKstudent />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Employment Visa" && <HKemployee />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Business Visa" && <HKbusiness />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Tourist Visa" && <Hktourist />}
