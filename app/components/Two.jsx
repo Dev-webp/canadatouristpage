@@ -15,17 +15,19 @@ import UKTvisa from "./UKTvisa";
 import UKinnovatorvisa from "./UKinnovatorvisa";
 import UKsponvisa from "./UKsponvisa";
 import UKstudvisa from "./UKstudvisa";
-import HKstudent from "./HongKongpages/Hkstudent";
+
+import Hktourist from "./HongKongpages/Hktourist";
+import Hkemployee from "./HongKongpages/Hkemployee";
+import HKstudent from "./HongKongpages/HKstudent";
 import HKbusiness from "./HongKongpages/HKbusiness";
-import HKtourist from "./HongKongpages/Hktourist";
-import HKemployee from "./HongKongpages/Hkemployee";
 import HKdependent from "./HongKongpages/HKdependent";
 import HKwork from "./HongKongpages/HKwork";
-// import Canadawork from "./Canadapages/Canadawork";
+
 import Canadastudent from "./Canadapages/Canadastudent";
 import Canadatourist from "./Canadapages/Canadatourist";
 import Canadapr from "./Canadapages/Canadapr";
 import Canadafs from "./Canadapages/Canadafs";
+
 
 
 
@@ -308,12 +310,12 @@ const Migrate = () => {
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Sponsorship Visa" && <UKsponvisa />}
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Student Visa" && <UKstudvisa />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Student Visa" && <HKstudent />}
-             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Employment Visa" && <HKemployee />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Employment Visa" && <Hkemployee />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Business Visa" && <HKbusiness />}
-             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Tourist Visa" && <HKtourist />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Tourist Visa" && <Hktourist />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Dependent Visa" && <HKdependent />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Work Visa" && <HKwork />}
-             {/* {selectedCountry === "Migrate to Canada" && selectedVisa === "Hong Kong Work Visa" && <Canadawork />} */}
+             
              {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Student Visa" && <Canadastudent/>}
              {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Tourist Visa" && <Canadatourist />}
              {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Permanent Residency Visa" && <Canadapr />}
