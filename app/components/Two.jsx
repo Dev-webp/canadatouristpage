@@ -16,7 +16,7 @@ import UKinnovatorvisa from "./UKinnovatorvisa";
 import UKsponvisa from "./UKsponvisa";
 import UKstudvisa from "./UKstudvisa";
 
-import Hktourist from "./HongKongpages/Hktourist";
+import Hktourist from "./HongKongpages/HKourist";
 import HKemployee from "./HongKongpages/HKemployee";
 import HKstudent from "./HongKongpages/HKstudent";
 import HKbusiness from "./HongKongpages/HKbusiness";
