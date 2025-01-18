@@ -312,6 +312,7 @@ const Migrate = () => {
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Business Visa" && <HKbusiness />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Tourist Visa" && <HKtourist />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Dependent Visa" && <HKdependent />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Work Visa" && <HKwork />}
              {/* {selectedCountry === "Migrate to Canada" && selectedVisa === "Hong Kong Work Visa" && <Canadawork />} */}
              {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Student Visa" && <Canadastudent/>}
              {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Tourist Visa" && <Canadatourist />}
