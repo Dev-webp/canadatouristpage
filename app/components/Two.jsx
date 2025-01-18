@@ -15,6 +15,20 @@ import UKTvisa from "./UKTvisa";
 import UKinnovatorvisa from "./UKinnovatorvisa";
 import UKsponvisa from "./UKsponvisa";
 import UKstudvisa from "./UKstudvisa";
+import HKstudent from "./HongKongpages/Hkstudent";
+import HKbusiness from "./HongKongpages/HKbusiness";
+import HKtourist from "./HongKongpages/Hktourist";
+import HKemployee from "./HongKongpages/Hkemployee";
+import HKdependent from "./HongKongpages/HKdependent";
+import HKwork from "./HongKongpages/HKwork";
+// import Canadawork from "./Canadapages/Canadawork";
+import Canadastudent from "./Canadapages/Canadastudent";
+import Canadatourist from "./Canadapages/Canadatourist";
+import Canadapr from "./Canadapages/Canadapr";
+import Canadafs from "./Canadapages/Canadafs";
+
+
+
 
 
 
@@ -33,7 +47,7 @@ const countriesData = {
       ]
     },
     "Migrate to Canada": {
-      description: "Canada is one of the top destinations for skilled workers, students, and immigrants. It offers excellent opportunities for work, education, and living.",
+
       image: "https://example.com/canada-image.jpg", // Add the image URL here
       visaTypes: [
         "Canada Work Visa",
@@ -102,7 +116,6 @@ const countriesData = {
       ]
     },
     "Migrate to Hong Kong": {
-      description: "Hong Kong is a global hub for finance and business, providing numerous opportunities for professionals in various sectors.",
       image: "https://example.com/hong-kong-image.jpg", // Add the image URL here
       visaTypes: [
         "Hong Kong Student Visa",
@@ -272,6 +285,8 @@ const Migrate = () => {
                   {/* Render Content component only for "Migrate to Germany" */}
               {selectedCountry === "Migrate to Germany" && <Content />}
               {selectedCountry === "Migrate to United Kingdom" && <UKstudvisa />}
+              {selectedCountry === "Migrate to Hong Kong" && <HKstudent />}
+              {selectedCountry === "Migrate to Canada" && <Canadastudent />}
                 </>
               ) : (
                 <>
@@ -292,13 +307,24 @@ const Migrate = () => {
               {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Innovator Visa" && <UKinnovatorvisa />}
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Sponsorship Visa" && <UKsponvisa />}
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Student Visa" && <UKstudvisa />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Student Visa" && <HKstudent />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Employment Visa" && <HKemployee />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Business Visa" && <HKbusiness />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Tourist Visa" && <HKtourist />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Dependent Visa" && <HKdependent />}
+             {/* {selectedCountry === "Migrate to Canada" && selectedVisa === "Hong Kong Work Visa" && <Canadawork />} */}
+             {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Student Visa" && <Canadastudent/>}
+             {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Tourist Visa" && <Canadatourist />}
+             {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Permanent Residency Visa" && <Canadapr />}
+             {selectedCountry === "Migrate to Canada" && selectedVisa === "Canada Family Sponsorship Visa" && <Canadafs />}
+             
                 </>
                 
                 
               )}
               
             </>
-          ) : (
+          ) : (   
             <>
               <h3 className="text-3xl font-semibold text-black mb-4 text-center">Details for {selectedVisa}</h3>
               <p className="text-lg text-gray-600 mb-8 text-center">
