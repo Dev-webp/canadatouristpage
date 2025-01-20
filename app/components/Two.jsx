@@ -16,7 +16,7 @@ import UKinnovatorvisa from "./UKinnovatorvisa";
 import UKsponvisa from "./UKsponvisa";
 import UKstudvisa from "./UKstudvisa";
 
-import Hktourist from "./HongKongpages/HKtourist";
+import HKtourist from "./HongKongpages/HKtourist";
 import HKemployee from "./HongKongpages/HKemployee";
 import HKstudent from "./HongKongpages/HKstudent";
 import HKbusiness from "./HongKongpages/HKbusiness";
@@ -304,15 +304,17 @@ const Migrate = () => {
               {selectedCountry === "Migrate to Germany" && selectedVisa === "Germany Dependent Visa" && <Gdependentvisa />}
               {selectedCountry === "Migrate to Germany" && selectedVisa === "Germany Self Employment Visa" && <Gselfempvisa />}
               {selectedCountry === "Migrate to Germany" && selectedVisa === "Germany Freelance Visa" && <Gfreelance />}
+
               {selectedCountry === "Migrate to United Kingdom"  && selectedVisa === "UK Business Visa" && <UKBvisa />}
               {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Tourist Visa" && <UKTvisa /> }
               {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Innovator Visa" && <UKinnovatorvisa />}
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Sponsorship Visa" && <UKsponvisa />}
              {selectedCountry === "Migrate to United Kingdom" && selectedVisa === "UK Student Visa" && <UKstudvisa />}
+
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Student Visa" && <HKstudent />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Employment Visa" && <HKemployee />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Business Visa" && <HKbusiness />}
-             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Tourist Visa" && <Hktourist />}
+             {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Tourist Visa" && <HKtourist />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Dependent Visa" && <HKdependent />}
              {selectedCountry === "Migrate to Hong Kong" && selectedVisa === "Hong Kong Work Visa" && <HKwork />}
              
